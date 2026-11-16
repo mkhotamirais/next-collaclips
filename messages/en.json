@@ -1,0 +1,283 @@
+{
+  "menu": {
+    "home": {
+      "label": "Home",
+      "url": "#home"
+    },
+    "clippers": {
+      "label": "Clippers",
+      "url": "#clippers"
+    },
+    "creators": {
+      "label": "Creators",
+      "url": "#creators"
+    },
+    "contact": {
+      "label": "Contact",
+      "url": "#contact"
+    }
+  },
+  "metadata": {
+    "title": "Collaclips — Creator & Clipper Collaboration Platform",
+    "description": "Collaclips connects creators with clippers who know how to turn long videos into clips that go viral."
+  },
+  "hero": {
+    "badge": "Creator & clipper collaboration platform",
+    "titleLead": "From long videos to",
+    "titleHighlight": "clips that go viral",
+    "description": "Collaclips connects creators with great content to clippers who know how to cut it. Source material, collaboration, and results in one place.",
+    "ctaCreator": "I'm a Creator",
+    "ctaClipper": "I'm a Clipper",
+    "hint": "Move your cursor over the dots",
+    "stats": [
+      {
+        "value": 500,
+        "suffix": "+",
+        "label": "Source clips"
+      },
+      {
+        "value": 120,
+        "suffix": "+",
+        "label": "Active clippers"
+      },
+      {
+        "value": 3,
+        "suffix": "M+",
+        "label": "Clip views"
+      }
+    ]
+  },
+  "statement": {
+    "text": "One small moment can reach thousands. Collaclips brings together those with a story and those who know how to package it.",
+    "hint": "Move your cursor to light it up"
+  },
+  "story": {
+    "eyebrow": "The story",
+    "title": "Every viral clip has a",
+    "titleHighlight": "story behind it",
+    "description": "This is the journey of one small moment, from lost inside a long video to watched by thousands.",
+    "chapters": [
+      {
+        "label": "Chapter 1",
+        "title": "A golden moment, buried",
+        "text": "Raka just wrapped a two-hour podcast. At minute 47 there was one answer that had everyone laughing, but nobody got around to cutting it. The moment quietly sank among thousands of other seconds.",
+        "meta": "02:05:12"
+      },
+      {
+        "label": "Chapter 2",
+        "title": "A clipper finds it",
+        "text": "Nadia, a clipper, opens the source from Collaclips. She watches, takes notes, then stops at one point: \"There it is.\" Her eyes are trained to find the 30 seconds worth watching.",
+        "meta": "Minute 47"
+      },
+      {
+        "label": "Chapter 3",
+        "title": "Cut and polished",
+        "text": "Nadia trims it to 34 seconds, adds captions, and puts the funniest part in the first three seconds. Viewers decide to stay or swipe in a heartbeat, so the opening has to hook right away.",
+        "meta": "00:34"
+      },
+      {
+        "label": "Chapter 4",
+        "title": "Approved together",
+        "text": "The clip goes to Raka. He watches it, leaves a small note, then approves it. The creator stays in control and the clipper's work is respected. A clean collaboration for both sides.",
+        "meta": "Approved"
+      },
+      {
+        "label": "Chapter 5",
+        "title": "It spreads everywhere",
+        "text": "The clip goes live on TikTok, Reels, and Shorts. People who had never heard of Raka are now watching, laughing, and searching for the full video.",
+        "meta": "1.2M views"
+      }
+    ],
+    "closing": "One small moment, a big reach. That's what we help make happen, for creators and clippers.",
+    "cta": "Start your story",
+    "clipTitle": "Funny podcast moment"
+  },
+  "clippers": {
+    "eyebrow": "For Clippers",
+    "title": "Turn your editing skills into",
+    "titleHighlight": "income",
+    "description": "No need to hunt for material. Pick content from creators, cut it, and earn from the results.",
+    "benefits": [
+      "Ready-to-use source material from many creators",
+      "Choose categories that match your interests",
+      "Flexible work, anytime and from anywhere",
+      "A portfolio of clips that keeps growing"
+    ],
+    "cta": "Join as a Clipper",
+    "sources": {
+      "title": "Latest sources to cut",
+      "description": "Open the link, find the best moments, then start cutting.",
+      "filterLabel": "Filter by category",
+      "openLabel": "Open source",
+      "categories": [
+        {
+          "id": "all",
+          "label": "All"
+        },
+        {
+          "id": "podcast",
+          "label": "Podcast"
+        },
+        {
+          "id": "gaming",
+          "label": "Gaming"
+        },
+        {
+          "id": "bisnis",
+          "label": "Business"
+        },
+        {
+          "id": "edukasi",
+          "label": "Education"
+        }
+      ],
+      "items": [
+        {
+          "title": "A 2-hour chat with a startup founder",
+          "creator": "Raka Talks",
+          "category": "podcast",
+          "duration": "2:05:12",
+          "url": "https://www.youtube.com/watch?v=GANTI_LINK_1"
+        },
+        {
+          "title": "Ranked live gaming until sunrise",
+          "creator": "Nadia Play",
+          "category": "gaming",
+          "duration": "3:40:08",
+          "url": "https://www.youtube.com/watch?v=GANTI_LINK_2"
+        },
+        {
+          "title": "Selling online from zero",
+          "creator": "Bisnis Santai",
+          "category": "bisnis",
+          "duration": "58:30",
+          "url": "https://www.youtube.com/watch?v=GANTI_LINK_3"
+        },
+        {
+          "title": "Learn design in a single day",
+          "creator": "Dimas Belajar",
+          "category": "edukasi",
+          "duration": "1:12:45",
+          "url": "https://www.youtube.com/watch?v=GANTI_LINK_4"
+        },
+        {
+          "title": "Horror podcast: stories from locals",
+          "creator": "Malam Jumat",
+          "category": "podcast",
+          "duration": "1:30:00",
+          "url": "https://www.youtube.com/watch?v=GANTI_LINK_5"
+        },
+        {
+          "title": "Community tournament, an exciting final",
+          "creator": "Arena Kita",
+          "category": "gaming",
+          "duration": "2:15:20",
+          "url": "https://www.youtube.com/watch?v=GANTI_LINK_6"
+        }
+      ]
+    }
+  },
+  "creators": {
+    "eyebrow": "For Creators",
+    "title": "Your long-form content, a much",
+    "titleHighlight": "wider reach",
+    "description": "Focus on making content. Let clippers cut the best moments and spread them to more viewers.",
+    "benefits": [
+      "One long video becomes many ready-to-post clips",
+      "Clippers who match your content style",
+      "You review and approve before any clip goes live",
+      "New audiences from TikTok, Reels, and Shorts"
+    ],
+    "cta": "Join as a Creator",
+    "figures": [
+      {
+        "value": 10,
+        "suffix": "+",
+        "label": "clips from a single long video"
+      },
+      {
+        "value": 100,
+        "suffix": "%",
+        "label": "of clips approved by you before they go live"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked",
+    "titleHighlight": "questions",
+    "description": "Can't find your answer? Reach out through the contact options below.",
+    "items": [
+      {
+        "q": "What is Collaclips?",
+        "a": "Collaclips is a platform that connects creators with clippers. Creators share source material, and clippers cut it into short clips for TikTok, Reels, and Shorts."
+      },
+      {
+        "q": "How do I get started?",
+        "a": "Pick your role, creator or clipper, then contact us using the options below. We'll help you from the very first step."
+      },
+      {
+        "q": "What kind of material can be clipped?",
+        "a": "Long videos such as podcasts, live streams, tutorials, and educational content that creators share through Collaclips."
+      },
+      {
+        "q": "Do clippers need experience?",
+        "a": "Not necessarily. What matters is that you can spot interesting moments and know the basics of video editing. You can start with short source material and grow from there."
+      },
+      {
+        "q": "Do creators lose control of their content?",
+        "a": "No. Creators choose which material to share and approve every clip before it goes live."
+      },
+      {
+        "q": "How do creators make sure the clips turn out right?",
+        "a": "Every clip is sent to the creator for review. A clip only goes live once the creator approves it."
+      },
+      {
+        "q": "Which platforms are supported?",
+        "a": "Clips are made in a vertical format that suits TikTok, Instagram Reels, and YouTube Shorts."
+      },
+      {
+        "q": "What about revenue sharing?",
+        "a": "The collaboration terms and revenue split are agreed on together before a project starts. Contact us for the full details."
+      }
+    ],
+    "stillAsking": {
+      "title": "Still have questions?",
+      "description": "Our team is ready to help, whether you're a creator or a clipper.",
+      "cta": "Contact us"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Ready to start",
+    "titleHighlight": "collaborating?",
+    "description": "Tell us what you need, whether as a creator or a clipper. We'll get back to you as soon as we can.",
+    "channels": [
+      {
+        "id": "email",
+        "label": "Email",
+        "value": "halo@collaclips.id",
+        "href": "mailto:halo@collaclips.id"
+      },
+      {
+        "id": "whatsapp",
+        "label": "WhatsApp",
+        "value": "+62 800-0000-0000",
+        "href": "https://wa.me/6280000000000"
+      },
+      {
+        "id": "instagram",
+        "label": "Instagram",
+        "value": "@collaclips",
+        "href": "https://instagram.com/collaclips"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "The platform that connects creators and clippers, turning long videos into clips that go viral.",
+    "navTitle": "Explore",
+    "contactTitle": "Contact",
+    "copyright": "© {year} Collaclips. All rights reserved.",
+    "backToTop": "Back to top"
+  }
+}
