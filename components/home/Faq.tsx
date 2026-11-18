@@ -7,7 +7,7 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
 import { cn } from "cn";
 
-import Button from "@/components/ui2/Button";
+// import Button from "@/components/ui2/Button";
 import Reveal from "@/components/ui2/Reveal";
 import SectionHeading from "@/components/ui2/SectionHeading";
 
@@ -19,7 +19,10 @@ export default function FAQ() {
   const baseId = useId();
   const [open, setOpen] = useState<number | null>(0);
 
-  const items = t.raw("items") as FaqItem[];
+  const KEEP = [0, 1, 6, 7];
+
+  // const items = t.raw("items").slice(1, 3) as FaqItem[];
+  const items = (t.raw("items") as FaqItem[]).filter((_, i) => KEEP.includes(i));
 
   return (
     <section id="faq" className="relative bg-bg py-24 text-fg sm:py-32">
@@ -93,13 +96,13 @@ export default function FAQ() {
             })}
           </div>
 
-          <div className="mt-14 text-center">
+          {/* <div className="mt-14 text-center">
             <p className="font-display text-xl font-medium">{t("stillAsking.title")}</p>
             <p className="mt-2 text-muted">{t("stillAsking.description")}</p>
             <Button href="#contact" variant="outline" className="mt-6">
               {t("stillAsking.cta")}
             </Button>
-          </div>
+          </div> */}
         </Reveal>
       </div>
     </section>

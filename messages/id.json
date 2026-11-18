@@ -256,22 +256,24 @@
       {
         "id": "email",
         "label": "Email",
-        "value": "halo@collaclips.id",
-        "href": "mailto:halo@collaclips.id"
+        "value": "halo@collaclips.com",
+        "href": "mailto:halo@collaclips.com"
       },
       {
         "id": "whatsapp",
         "label": "WhatsApp",
-        "value": "+62 800-0000-0000",
-        "href": "https://wa.me/6280000000000"
+        "value": "0857-1669-8700",
+        "href": "https://wa.me/6285716698700?text=Halo%20Collaclips%2C%20saya%20tertarik%20untuk%20berkolaborasi.%20Boleh%20minta%20info%20lebih%20lanjut%3F"
       },
       {
         "id": "instagram",
         "label": "Instagram",
-        "value": "@collaclips",
-        "href": "https://instagram.com/collaclips"
+        "value": "@collaclipscom",
+        "href": "https://www.instagram.com/collaclipscom?srtk=MTBjYXd3bTZ3dXJqYQ=="
       }
-    ]
+    ],
+    "copyLabel": "Salin",
+    "copiedLabel": "Tersalin"
   },
   "footer": {
     "tagline": "Platform yang mempertemukan creator dan clipper, dari video panjang jadi klip yang viral.",

@@ -1,11 +1,12 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
-import { ArrowUp } from "lucide-react";
+// import { ArrowUp } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useReducedMotion } from "motion/react";
+// import { useReducedMotion } from "motion/react";
 
 import Logo from "@/components/Logo";
+import CopyButton from "@/components/ui2/CopyButton";
 import { MENU_KEYS } from "@/lib/constants";
 
 type Channel = { id: string; label: string; value: string; href: string };
@@ -24,16 +25,16 @@ export default function Footer() {
   const t = useTranslations("footer");
   const tMenu = useTranslations("menu");
   const tContact = useTranslations("contact");
-  const reduce = useReducedMotion();
+  // const reduce = useReducedMotion();
   const year = useCurrentYear();
 
   const channels = tContact.raw("channels") as Channel[];
 
-  const backToTop = () => window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+  // const backToTop = () => window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
 
   return (
     <footer className="border-t border-line bg-bg-deep text-fg">
-      <div className="mx-auto max-w-6xl px-6 py-14">
+      <div className="mx-auto max-w-6xl 2xl:max-w-7xl px-6 py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <Logo />
@@ -60,7 +61,7 @@ export default function Footer() {
             <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">{t("contactTitle")}</h2>
             <ul className="mt-5 space-y-3">
               {channels.map((c) => (
-                <li key={c.id}>
+                <li key={c.id} className="flex items-center gap-2">
                   <a
                     href={c.href}
                     {...(c.href.startsWith("mailto:") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
@@ -68,6 +69,14 @@ export default function Footer() {
                   >
                     {c.value}
                   </a>
+                  {c.id === "email" && (
+                    <CopyButton
+                      iconOnly
+                      value={c.value}
+                      label={tContact("copyLabel")}
+                      copiedLabel={tContact("copiedLabel")}
+                    />
+                  )}
                 </li>
               ))}
             </ul>
@@ -76,14 +85,14 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-line pt-6 sm:flex-row">
           <p className="text-sm text-muted">{t("copyright", { year: year ?? "" })}</p>
-          <button
+          {/* <button
             type="button"
             onClick={backToTop}
             className="group inline-flex cursor-pointer items-center gap-2 text-sm text-muted outline-none transition-colors hover:text-fg focus-visible:text-fg"
           >
             {t("backToTop")}
             <ArrowUp className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
-          </button>
+          </button> */}
         </div>
       </div>
     </footer>

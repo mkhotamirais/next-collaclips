@@ -14,7 +14,7 @@ export default function Story() {
 
   return (
     <section id="story" className="relative bg-bg py-24 text-fg sm:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl 2xl:max-w-7xl px-6">
         <SectionHeading
           eyebrow={t("eyebrow")}
           title={t("title")}

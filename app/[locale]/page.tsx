@@ -1,3 +1,4 @@
+import Clients from "@/components/home/Clients";
 import Clippers from "@/components/home/Clippers";
 import Contact from "@/components/home/Contact";
 import Creators from "@/components/home/Creators";
@@ -10,6 +11,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero /> {/* #home */}
+      <Clients />
       <Statement />
       <Story />
       <Clippers /> {/* #clippers */}

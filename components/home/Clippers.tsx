@@ -37,7 +37,7 @@ export default function Clippers() {
 
   return (
     <section id="clippers" className="relative bg-bg py-24 text-fg sm:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl 2xl:max-w-7xl px-6">
         {/* pengantar */}
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div>

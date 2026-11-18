@@ -1,6 +1,6 @@
 "use client";
 
-import { MousePointer2 } from "lucide-react";
+// import { MousePointer2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 
@@ -33,12 +33,12 @@ export default function Hero() {
     >
       <MagicBackground />
 
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 lg:grid-cols-[1.1fr_0.9fr]">
+      <div className="mx-auto grid w-full max-w-6xl 2xl:max-w-7xl items-center gap-12 px-6 xl:grid-cols-[1.2fr_0.8fr] 2xl:grid-cols-[1.3fr_0.7fr]">
         <motion.div
           variants={stagger}
           initial={reduce ? false : "hidden"}
           animate="show"
-          className="text-center lg:text-left"
+          className="text-center xl:text-left"
         >
           <motion.p
             variants={fadeUp}
@@ -50,7 +50,7 @@ export default function Hero() {
 
           <motion.h1
             variants={fadeUp}
-            className="mt-6 font-display text-5xl font-medium leading-[1.05] tracking-tight sm:text-6xl lg:text-6xl"
+            className="mt-6 font-display text-5xl font-medium leading-[1.05] tracking-tight sm:text-6xl 2xl:text-7xl"
           >
             {t("titleLead")}{" "}
             <span className="pb-2 block bg-linear-to-r from-brand to-brand-2 bg-clip-text pr-[0.1em] font-serif text-[1.1em] font-normal italic text-transparent">
@@ -60,14 +60,14 @@ export default function Hero() {
 
           <motion.p
             variants={fadeUp}
-            className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg lg:mx-0"
+            className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg xl:mx-0"
           >
             {t("description")}
           </motion.p>
 
           <motion.div
             variants={fadeUp}
-            className="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start"
+            className="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center xl:justify-start"
           >
             <Button href="#creators" variant="primary">
               {t("ctaCreator")}
@@ -79,7 +79,7 @@ export default function Hero() {
 
           <motion.dl
             variants={fadeUp}
-            className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-line pt-6 text-left"
+            className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-line pt-6 text-left mx-auto xl:mx-0"
           >
             {stats.map((s) => (
               <div key={s.label}>
@@ -96,13 +96,13 @@ export default function Hero() {
           initial={reduce ? false : { opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          className="mx-auto w-full max-w-md"
+          className="mx-auto w-full max-w-sm"
         >
           <DotImageRepel className="aspect-square" />
-          <p className="mt-4 flex items-center justify-center gap-2 text-xs text-muted">
+          {/* <p className="mt-4 flex items-center justify-center gap-2 text-xs text-muted">
             <MousePointer2 className="h-3.5 w-3.5 text-brand" />
             {t("hint")}
-          </p>
+          </p> */}
         </motion.div>
       </div>
     </section>

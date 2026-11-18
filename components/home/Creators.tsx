@@ -17,7 +17,7 @@ export default function Creators() {
 
   return (
     <section id="creators" className="relative border-t border-line bg-bg py-24 text-fg sm:py-32">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-20">
+      <div className="mx-auto grid max-w-6xl 2xl:max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-20">
         {/* angka */}
         <Reveal className="order-2 lg:order-1">
           <div className="divide-y divide-line rounded-3xl border border-line bg-surface/40">

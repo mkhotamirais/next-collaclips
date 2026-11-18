@@ -34,7 +34,7 @@ export default function SwitchLangBtn({ className }: { className?: string }) {
       router.replace(
         // @ts-expect-error -- pathname dan params selalu cocok
         { pathname, params },
-        { locale: nextLocale },
+        { locale: nextLocale, scroll: false }, // tetap di posisi scroll sekarang
       );
     });
   };
