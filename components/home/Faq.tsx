@@ -17,7 +17,7 @@ export default function FAQ() {
   const t = useTranslations("faq");
   const reduce = useReducedMotion();
   const baseId = useId();
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   const KEEP = [0, 1, 6, 7];
 
