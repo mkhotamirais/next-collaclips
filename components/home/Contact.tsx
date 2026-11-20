@@ -51,17 +51,17 @@ export default function Contact() {
                     <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">{c.label}</span>
 
                     {/* seluruh kartu bisa diklik lewat link ini (stretched link) */}
-                    <div className={cn("inline-flex items-center gap-2", c.label === "Email" ? "mt-0" : "mt-1.5")}>
-                      <a
-                        href={c.href}
-                        {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                        className="break-all text-sm font-medium outline-none after:absolute after:inset-0 after:rounded-2xl focus-visible:after:ring-2 focus-visible:after:ring-brand"
-                      >
-                        {c.value}
-                      </a>
+                    {/* <div className={cn("inline-flex items-center gap-2", c.label === "Email" ? "mt-0" : "mt-1.5")}> */}
+                    <a
+                      href={c.href}
+                      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      className="break-all text-sm font-medium outline-none after:absolute after:inset-0 after:rounded-2xl focus-visible:after:ring-2 focus-visible:after:ring-brand"
+                    >
+                      {c.value}
+                    </a>
 
-                      {/* tombol salin hanya untuk email; z-10 agar di atas link */}
-                      {c.id === "email" && (
+                    {/* tombol salin hanya untuk email; z-10 agar di atas link */}
+                    {/* {c.id === "email" && (
                         <CopyButton
                           iconOnly
                           value={c.value}
@@ -70,7 +70,7 @@ export default function Contact() {
                           className="relative z-10 mt-1"
                         />
                       )}
-                    </div>
+                    </div> */}
                   </motion.div>
                 </Reveal>
               </li>

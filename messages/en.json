@@ -1,21 +1,9 @@
 {
   "menu": {
-    "home": {
-      "label": "Home",
-      "url": "#home"
-    },
-    "clippers": {
-      "label": "Clippers",
-      "url": "#clippers"
-    },
-    "creators": {
-      "label": "Creators",
-      "url": "#creators"
-    },
-    "contact": {
-      "label": "Contact",
-      "url": "#contact"
-    }
+    "home": { "label": "Home", "url": "#home" },
+    "clippers": { "label": "Clippers", "url": "#clippers" },
+    "creators": { "label": "Creators", "url": "#creators" },
+    "contact": { "label": "Contact", "url": "#contact" }
   },
   "metadata": {
     "title": "Collaclips — Creator & Clipper Collaboration Platform",
@@ -23,113 +11,84 @@
   },
   "hero": {
     "badge": "Creator & clipper collaboration platform",
-    "titleLead": "From long videos to",
-    "titleHighlight": "clips that go viral",
-    "description": "Collaclips connects creators with great content to clippers who know how to cut it. Source material, collaboration, and results in one place.",
+    "title": "From <miring>campaign</miring> videos to <miring>clips that go viral</miring>",
+    "description": "Collaclips brings brands, clippers, and creators together to power campaigns as one team. From every collaboration to the final results, everything comes together in one place",
     "ctaCreator": "I'm a Creator",
     "ctaClipper": "I'm a Clipper",
     "hint": "Move your cursor over the dots",
     "stats": [
-      {
-        "value": 500,
-        "suffix": "+",
-        "label": "Source clips"
-      },
-      {
-        "value": 120,
-        "suffix": "+",
-        "label": "Active clippers"
-      },
-      {
-        "value": 3,
-        "suffix": "M+",
-        "label": "Clip views"
-      }
+      { "value": 100, "suffix": "+", "label": "Source clips" },
+      { "value": 1000, "suffix": "+", "label": "Active clippers" },
+      { "value": 300, "suffix": "+", "label": "Creators" },
+      { "value": 10, "suffix": "M+", "label": "Clip views" }
     ]
   },
   "statement": {
-    "text": "One small moment can reach thousands. Collaclips brings together those with a story and those who know how to package it.",
+    "text": "One small moment can reach thousands. Collaclips brings together those with a story and those who know how to package it",
     "hint": "Move your cursor to light it up"
   },
   "story": {
     "eyebrow": "The story",
     "title": "Every viral clip has a",
     "titleHighlight": "story behind it",
-    "description": "This is the journey of one small moment, from lost inside a long video to watched by thousands.",
+    "description": "This is the journey where an idea, a goal, and a moment meet, so your existing campaign videos get seen, heard, and talked about by more people",
     "chapters": [
       {
         "label": "Chapter 1",
         "title": "A golden moment, buried",
-        "text": "Raka just wrapped a two-hour podcast. At minute 47 there was one answer that had everyone laughing, but nobody got around to cutting it. The moment quietly sank among thousands of other seconds.",
+        "text": "A full recording has just come to an end. Somewhere in it are the best moments, waiting to be captured, whether from the recording as a whole or from the parts that never got clipped to be remembered and slowly sank among thousands of other seconds",
         "meta": "02:05:12"
       },
       {
         "label": "Chapter 2",
-        "title": "A clipper finds it",
-        "text": "Nadia, a clipper, opens the source from Collaclips. She watches, takes notes, then stops at one point: \"There it is.\" Her eyes are trained to find the 30 seconds worth watching.",
+        "title": "Clippers and creators pick it up",
+        "text": "Nothing that enters Collaclips is simply left to pass by. Clippers and creators follow every second, pause at the most striking point, and then pick up that valuable moment to share it with more people",
         "meta": "Minute 47"
       },
       {
         "label": "Chapter 3",
         "title": "Cut and polished",
-        "text": "Nadia trims it to 34 seconds, adds captions, and puts the funniest part in the first three seconds. Viewers decide to stay or swipe in a heartbeat, so the opening has to hook right away.",
+        "text": "That moment is stitched together in a short form, with text and a hook that captivates from the very first second. In the hands of clippers and creators, one small clip can keep moving, get replayed, and spark conversations in new spaces",
         "meta": "00:34"
       },
       {
         "label": "Chapter 4",
         "title": "Approved together",
-        "text": "The clip goes to Raka. He watches it, leaves a small note, then approves it. The creator stays in control and the clipper's work is respected. A clean collaboration for both sides.",
+        "text": "Every clip is reviewed and aligned with the existing notes and brief. Creators stay in control, clippers' work is valued, and the collaboration runs smoothly",
         "meta": "Approved"
       },
       {
         "label": "Chapter 5",
         "title": "It spreads everywhere",
-        "text": "The clip goes live on TikTok, Reels, and Shorts. People who had never heard of Raka are now watching, laughing, and searching for the full video.",
-        "meta": "1.2M views"
+        "text": "The clip breaks through the timelines of TikTok, Reels, and Shorts. Viewers who never knew about it before now stop by, react, and then look for what comes next. And everyone involved can ultimately get what they set out to achieve and wanted"
       }
     ],
-    "closing": "One small moment, a big reach. That's what we help make happen, for creators and clippers.",
+    "closing": "One small moment, a big reach. That's what we help make happen",
     "cta": "Start your story",
     "clipTitle": "Funny podcast moment"
   },
   "clippers": {
     "eyebrow": "For Clippers",
-    "title": "Turn your editing skills into",
-    "titleHighlight": "income",
-    "description": "No need to hunt for material. Pick content from creators, cut it, and earn from the results.",
+    "title": "Turn your <miring>clipping skills</miring> into a source of <miring>income</miring>",
+    "description": "No need to hunt for your own source material. Pick from the available content, clip it, and get results",
     "benefits": [
-      "Ready-to-use source material from many creators",
+      "Ready-to-use source material",
       "Choose categories that match your interests",
       "Flexible work, anytime and from anywhere",
       "A portfolio of clips that keeps growing"
     ],
     "cta": "Join as a Clipper",
     "sources": {
-      "title": "Latest sources to cut",
-      "description": "Open the link, find the best moments, then start cutting.",
+      "title": "Latest available content",
+      "description": "Open the link, find the best moments, then start spreading them",
       "filterLabel": "Filter by category",
       "openLabel": "Open source",
       "categories": [
-        {
-          "id": "all",
-          "label": "All"
-        },
-        {
-          "id": "podcast",
-          "label": "Podcast"
-        },
-        {
-          "id": "gaming",
-          "label": "Gaming"
-        },
-        {
-          "id": "bisnis",
-          "label": "Business"
-        },
-        {
-          "id": "edukasi",
-          "label": "Education"
-        }
+        { "id": "all", "label": "All" },
+        { "id": "podcast", "label": "Podcast" },
+        { "id": "gaming", "label": "Gaming" },
+        { "id": "bisnis", "label": "Business" },
+        { "id": "edukasi", "label": "Education" }
       ],
       "items": [
         {
@@ -179,27 +138,19 @@
   },
   "creators": {
     "eyebrow": "For Creators",
-    "title": "Your long-form content, a much",
+    "title": "Create content for a wider reach and <miring>earn income</miring>",
     "titleHighlight": "wider reach",
-    "description": "Focus on making content. Let clippers cut the best moments and spread them to more viewers.",
+    "description": "Focus on making content and tailor it to your own character",
     "benefits": [
-      "One long video becomes many ready-to-post clips",
-      "Clippers who match your content style",
-      "You review and approve before any clip goes live",
-      "New audiences from TikTok, Reels, and Shorts"
+      "Campaigns with a clear brief direction",
+      "Measurable target audiences",
+      "Create flexible content to fit your available time",
+      "Results you can choose and measure"
     ],
     "cta": "Join as a Creator",
     "figures": [
-      {
-        "value": 10,
-        "suffix": "+",
-        "label": "clips from a single long video"
-      },
-      {
-        "value": 100,
-        "suffix": "%",
-        "label": "of clips approved by you before they go live"
-      }
+      { "value": 10, "suffix": "+", "label": "Campaign offers" },
+      { "value": 100, "suffix": "%", "label": "Tailored to your niche" }
     ]
   },
   "faq": {
@@ -210,11 +161,11 @@
     "items": [
       {
         "q": "What is Collaclips?",
-        "a": "Collaclips is a platform that connects creators with clippers. Creators share source material, and clippers cut it into short clips for TikTok, Reels, and Shorts."
+        "a": "Collaclips is a platform that connects brands with creators and clippers. Each party has a clear role and supports the others, ensuring that communication goals are met, creative control is maintained, and each role's contribution is measurable."
       },
       {
         "q": "How do I get started?",
-        "a": "Pick your role, creator or clipper, then contact us using the options below. We'll help you from the very first step."
+        "a": "Choose your role as a creator or clipper, click the available button to join the campaign group, then follow the instructions inside. We'll help you from the very first step."
       },
       {
         "q": "What kind of material can be clipped?",
@@ -238,7 +189,7 @@
       },
       {
         "q": "What about revenue sharing?",
-        "a": "The collaboration terms and revenue split are agreed on together before a project starts. Contact us for the full details."
+        "a": "You can choose any ongoing campaign as long as its budget allocation is still available. Once a clip reaches the agreed target and is verified, payment is sent directly to the recipient's wallet or bank account."
       }
     ],
     "stillAsking": {
@@ -251,7 +202,7 @@
     "eyebrow": "Contact",
     "title": "Ready to start",
     "titleHighlight": "collaborating?",
-    "description": "Tell us what you need, whether as a creator or a clipper. We'll get back to you as soon as we can.",
+    "description": "Tell us about your campaign needs and our team will get in touch with you shortly",
     "channels": [
       {
         "id": "email",
@@ -276,7 +227,7 @@
     "copiedLabel": "Copied"
   },
   "footer": {
-    "tagline": "The platform that connects creators and clippers, turning long videos into clips that go viral.",
+    "tagline": "A platform that connects brands with creators and clippers to run campaigns together.",
     "navTitle": "Explore",
     "contactTitle": "Contact",
     "copyright": "© {year} Collaclips. All rights reserved.",

@@ -33,7 +33,7 @@ export default function Hero() {
     >
       <MagicBackground />
 
-      <div className="mx-auto grid w-full max-w-6xl 2xl:max-w-7xl items-center gap-12 px-6 xl:grid-cols-[1.2fr_0.8fr] 2xl:grid-cols-[1.3fr_0.7fr]">
+      <div className="mx-auto grid w-full max-w-6xl 2xl:max-w-7xl items-center gap-12 px-6 xl:grid-cols-[1.3fr_0.7fr]">
         <motion.div
           variants={stagger}
           initial={reduce ? false : "hidden"}
@@ -52,10 +52,9 @@ export default function Hero() {
             variants={fadeUp}
             className="mt-6 font-display text-5xl font-medium leading-[1.05] tracking-tight sm:text-6xl 2xl:text-7xl"
           >
-            {t("titleLead")}{" "}
-            <span className="pb-2 block bg-linear-to-r from-brand to-brand-2 bg-clip-text pr-[0.1em] font-serif text-[1.1em] font-normal italic text-transparent">
-              {t("titleHighlight")}
-            </span>
+            {t.rich("title", {
+              miring: (chunks) => <span className="highlight-hero">{chunks}</span>,
+            })}
           </motion.h1>
 
           <motion.p
@@ -79,7 +78,7 @@ export default function Hero() {
 
           <motion.dl
             variants={fadeUp}
-            className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-line pt-6 text-left mx-auto xl:mx-0"
+            className="mt-12 grid max-w-xl grid-cols-2 md:grid-cols-4 gap-6 border-t border-line pt-6 text-center sm:text-left mx-auto xl:mx-0"
           >
             {stats.map((s) => (
               <div key={s.label}>

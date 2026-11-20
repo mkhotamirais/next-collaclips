@@ -44,8 +44,10 @@ export default function Clippers() {
             <SectionHeading
               align="left"
               eyebrow={t("eyebrow")}
-              title={t("title")}
-              highlight={t("titleHighlight")}
+              title={t.rich("title", {
+                miring: (chunks) => <span className="highlight-hero">{chunks}</span>,
+              })}
+              // highlight={t("titleHighlight")}
               description={t("description")}
             />
             <Reveal delay={0.2}>

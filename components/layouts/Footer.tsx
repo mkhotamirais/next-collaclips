@@ -69,14 +69,14 @@ export default function Footer() {
                   >
                     {c.value}
                   </a>
-                  {c.id === "email" && (
+                  {/* {c.id === "email" && (
                     <CopyButton
                       iconOnly
                       value={c.value}
                       label={tContact("copyLabel")}
                       copiedLabel={tContact("copiedLabel")}
                     />
-                  )}
+                  )} */}
                 </li>
               ))}
             </ul>

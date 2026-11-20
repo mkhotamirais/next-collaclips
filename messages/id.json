@@ -1,21 +1,9 @@
 {
   "menu": {
-    "home": {
-      "label": "Home",
-      "url": "#home"
-    },
-    "clippers": {
-      "label": "Clippers",
-      "url": "#clippers"
-    },
-    "creators": {
-      "label": "Creators",
-      "url": "#creators"
-    },
-    "contact": {
-      "label": "Kontak",
-      "url": "#contact"
-    }
+    "home": { "label": "Home", "url": "#home" },
+    "clippers": { "label": "Clippers", "url": "#clippers" },
+    "creators": { "label": "Creators", "url": "#creators" },
+    "contact": { "label": "Kontak", "url": "#contact" }
   },
   "metadata": {
     "title": "Collaclips — Platform Kolaborasi Creator & Clipper",
@@ -23,113 +11,85 @@
   },
   "hero": {
     "badge": "Platform kolaborasi creator & clipper",
-    "titleLead": "Dari video panjang jadi",
-    "titleHighlight": "klip yang viral",
-    "description": "Collaclips mempertemukan creator yang punya konten dengan clipper yang jago memotongnya. Bahan, kolaborasi, dan hasilnya ada di satu tempat.",
+    "title": "Dari video <miring>campaign</miring> jadi <miring>klip yang viral</miring>",
+    "description": "Collaclips mempertemukan brand dengan clipper dan creator untuk menggerakkan campaign Bersama-sama. Dan pada setiap kolaborasi dan hasil akhirnya, semua bertemu di satu tempat",
     "ctaCreator": "Saya Creator",
     "ctaClipper": "Saya Clipper",
     "hint": "Gerakkan kursor di atas titik-titik",
     "stats": [
-      {
-        "value": 500,
-        "suffix": "+",
-        "label": "Bahan klip"
-      },
-      {
-        "value": 120,
-        "suffix": "+",
-        "label": "Clipper aktif"
-      },
-      {
-        "value": 3,
-        "suffix": " jt+",
-        "label": "Tayangan klip"
-      }
+      { "value": 100, "suffix": "+", "label": "Bahan klip" },
+      { "value": 10000, "suffix": "+", "label": "Clipper aktif" },
+      { "value": 300, "suffix": "+", "label": "Kreator" },
+      { "value": 10, "suffix": " jt+", "label": "Tayangan klip" }
     ]
   },
   "statement": {
-    "text": "Satu momen kecil bisa menjangkau ribuan orang. Collaclips mempertemukan mereka yang punya cerita dengan mereka yang tahu cara mengemasnya.",
+    "text": "Satu momen kecil bisa menjangkau ribuan orang. Collaclips mempertemukan mereka yang punya cerita dengan mereka yang tahu cara mengemasnya",
     "hint": "Arahkan kursor untuk menyorot"
   },
   "story": {
     "eyebrow": "Ceritanya",
     "title": "Setiap klip viral punya",
     "titleHighlight": "cerita di baliknya",
-    "description": "Ini perjalanan satu momen kecil, dari tenggelam di video panjang sampai ditonton ribuan orang.",
+    "description": "Ini adalah perjalanan di mana satu ide, tujuan, dan momen itu bertemu—menjadikan video campaign yang ada agar lebih banyak dilihat, didengar, dan dibicarakan",
     "chapters": [
       {
         "label": "Bab 1",
         "title": "Momen emas yang tenggelam",
-        "text": "Raka baru selesai merekam podcast dua jam. Di menit ke-47 ada satu jawaban yang bikin semua orang tertawa, tapi tidak ada yang sempat memotongnya. Momen itu diam-diam tenggelam di antara ribuan detik lainnya.",
+        "text": "Satu rekaman penuh baru saja berlalu. Di sana, ada momen terbaik untuk kita dapatkan—entah dari seluruh hasilnya, atau sebagian yang tidak sempat dipotong untuk diingat, lalu pelan-pelan tenggelam di antara ribuan detik lainnya",
         "meta": "02:05:12"
       },
       {
         "label": "Bab 2",
-        "title": "Clipper menemukannya",
-        "text": "Nadia, seorang clipper, membuka bahan dari Collaclips. Ia menonton, mencatat, lalu berhenti di satu titik: \"Ini dia.\" Matanya sudah terlatih menemukan 30 detik yang layak ditonton banyak orang.",
+        "title": "Clipper dan creator menjemputnya",
+        "text": "Setiap bahan yang masuk ke Collaclips tidak dibiarkan berlalu begitu saja. Para clipper dan creator menyimak tiap detiknya, berhenti pada titik yang paling mengena, lalu menjemput momen berharga itu untuk dibagikan ke lebih banyak orang",
         "meta": "Menit ke-47"
       },
       {
         "label": "Bab 3",
         "title": "Dipotong dan dipoles",
-        "text": "Nadia memotongnya jadi 34 detik, menambah teks, dan menaruh bagian paling lucu di tiga detik pertama. Penonton memutuskan lanjut atau geser dalam sekejap, jadi pembukanya harus langsung menarik.",
+        "text": "Momen itu dirangkai singkat dengan teks dan pembuka yang memikat sejak detik pertama. Di tangan clipper dan creator, satu potongan kecil bisa terus bergerak, berulang, dan memantik obrolan di ruang-ruang baru",
         "meta": "00:34"
       },
       {
         "label": "Bab 4",
         "title": "Disetujui bersama",
-        "text": "Klip dikirim ke Raka. Ia menonton hasilnya, memberi catatan kecil, lalu menyetujuinya. Creator tetap memegang kendali, clipper dihargai karyanya. Kolaborasi yang rapi untuk dua pihak.",
+        "text": "Setiap klip diperiksa dan disesuaikan dengan catatan serta brief yang sudah ada. Creator tetap memegang kendali, kerja clipper dihargai, dan kolaborasi pun berjalan selaras",
         "meta": "Disetujui"
       },
       {
         "label": "Bab 5",
         "title": "Menyebar ke mana-mana",
-        "text": "Klip itu tayang di TikTok, Reels, dan Shorts. Orang-orang yang belum pernah mendengar nama Raka kini menonton, tertawa, lalu mencari video lengkapnya.",
+        "text": "Potongan itu menembus linimasa TikTok, Reels, dan Shorts. Penonton yang sebelumnya tak pernah tahu kini ikut singgah, bereaksi, lalu mencari kelanjutannya. Dan semua yang terlibat, pada akhirnya bisa mendapatkan apa yang menjadi tujuan dan keinginanya",
         "meta": "1,2 jt tayangan"
       }
     ],
-    "closing": "Satu momen kecil, jangkauan yang besar. Itu yang kami bantu wujudkan, untuk creator dan clipper.",
+    "closing": "Satu momen kecil, jangkauan yang besar. Itu yang kami bantu wujudkan",
     "cta": "Mulai ceritamu",
     "clipTitle": "Momen kocak di podcast"
   },
   "clippers": {
     "eyebrow": "Untuk Clipper",
-    "title": "Skill editmu, jadi",
-    "titleHighlight": "sumber penghasilan",
-    "description": "Tidak perlu mencari bahan sendiri. Pilih konten dari creator, potong, dan dapatkan hasilnya.",
+    "title": "Ubah keahlian <miring>clipping</miring>-mu menjadi <miring>sumber penghasilan</miring>",
+    "description": "Tidak perlu mencari bahan sendiri. Pilih konten yang tersedia, potong, dan dapatkan hasilnya",
     "benefits": [
-      "Bahan klip siap pakai dari berbagai creator",
+      "Bahan klip siap pakai",
       "Pilih kategori yang sesuai minatmu",
       "Kerja fleksibel, kapan saja dan dari mana saja",
       "Portofolio klip yang terus berkembang"
     ],
     "cta": "Gabung sebagai Clipper",
     "sources": {
-      "title": "Bahan terbaru untuk dipotong",
-      "description": "Buka link-nya, cari momen terbaik, lalu mulai memotong.",
+      "title": "Bahan terbaru yang tersedia",
+      "description": "Buka link-nya, cari moment terbaik, lalu mulai sebarkan",
       "filterLabel": "Filter kategori",
       "openLabel": "Buka bahan",
       "categories": [
-        {
-          "id": "all",
-          "label": "Semua"
-        },
-        {
-          "id": "podcast",
-          "label": "Podcast"
-        },
-        {
-          "id": "gaming",
-          "label": "Gaming"
-        },
-        {
-          "id": "bisnis",
-          "label": "Bisnis"
-        },
-        {
-          "id": "edukasi",
-          "label": "Edukasi"
-        }
+        { "id": "all", "label": "Semua" },
+        { "id": "podcast", "label": "Podcast" },
+        { "id": "gaming", "label": "Gaming" },
+        { "id": "bisnis", "label": "Bisnis" },
+        { "id": "edukasi", "label": "Edukasi" }
       ],
       "items": [
         {
@@ -179,27 +139,19 @@
   },
   "creators": {
     "eyebrow": "Untuk Creator",
-    "title": "Konten panjangmu, jangkauan yang",
+    "title": "Buat konten untuk jangkauan yang lebih luas dan <miring>dapatkan penghasilan</miring> ",
     "titleHighlight": "lebih luas",
-    "description": "Fokus bikin konten. Biar clipper yang memotong momen terbaiknya dan menyebarkannya ke lebih banyak penonton.",
+    "description": "fokus bikin konten dan sesuaikan dengan karakter yang kamu punya",
     "benefits": [
-      "Satu video panjang jadi banyak klip siap tayang",
-      "Clipper yang cocok dengan gaya kontenmu",
-      "Kamu tinjau dan setujui sebelum klip tayang",
-      "Audiens baru dari TikTok, Reels, dan Shorts"
+      "Campaign dengan arah brief yang jelas",
+      "Target audiens yang terukur",
+      "Buat konten yang fleksibel sesuai waktu yang ada",
+      "Hasil yang bisa dipilih dan terukur"
     ],
     "cta": "Gabung sebagai Creator",
     "figures": [
-      {
-        "value": 10,
-        "suffix": "+",
-        "label": "klip dari satu video panjang"
-      },
-      {
-        "value": 100,
-        "suffix": "%",
-        "label": "klip kamu setujui sebelum tayang"
-      }
+      { "value": 10, "suffix": "+", "label": "Penawaran campaign" },
+      { "value": 100, "suffix": "%", "label": "Disesuaikan dengan niche" }
     ]
   },
   "faq": {
@@ -210,11 +162,11 @@
     "items": [
       {
         "q": "Apa itu Collaclips?",
-        "a": "Collaclips adalah platform yang mempertemukan creator dengan clipper. Creator membagikan bahan, lalu clipper memotongnya menjadi klip pendek untuk TikTok, Reels, dan Shorts."
+        "a": "Collaclips adalah platform yang mempertemukan brand dengan creator dan clipper. Setiap pihak memiliki peran yang jelas dan saling mendukung, memastikan tujuan komunikasi tercapai, kendali kreatif tetap terjaga, serta kontribusi tiap peran berjalan terukur."
       },
       {
         "q": "Bagaimana cara memulai?",
-        "a": "Pilih peranmu, sebagai creator atau clipper, lalu hubungi kami lewat kontak di bawah. Kami bantu dari langkah pertama."
+        "a": "Tentukan peranmu sebagai creator atau clipper, klik tombol yang tersedia untuk bergabung ke grup campaign, lalu ikuti instruksi di dalamnya. Kami bantu dari langkah pertama."
       },
       {
         "q": "Bahan apa saja yang bisa dipotong?",
@@ -238,7 +190,7 @@
       },
       {
         "q": "Bagaimana dengan pembagian hasil?",
-        "a": "Skema kerja sama dan pembagian hasil dibahas bersama sebelum proyek dimulai. Hubungi kami untuk penjelasan lengkapnya."
+        "a": "Kamu bisa memilih campaign yang masih berjalan selama alokasi budget-nya masih tersedia. Setelah klip mencapai target yang disepakati dan terverifikasi, pembayaran langsung diteruskan ke wallet atau rekening penerima."
       }
     ],
     "stillAsking": {
@@ -251,7 +203,7 @@
     "eyebrow": "Kontak",
     "title": "Siap mulai",
     "titleHighlight": "berkolaborasi?",
-    "description": "Ceritakan kebutuhanmu, entah sebagai creator atau clipper. Kami akan membalas secepatnya.",
+    "description": "Ceritakan kebutuhan campaignmu dan tim kami akan segera menghubungi",
     "channels": [
       {
         "id": "email",
@@ -276,7 +228,7 @@
     "copiedLabel": "Tersalin"
   },
   "footer": {
-    "tagline": "Platform yang mempertemukan creator dan clipper, dari video panjang jadi klip yang viral.",
+    "tagline": "Platform yang mempertemukan brand dengan creator dan clipper untuk menjalankan campaign bersama-sama.",
     "navTitle": "Jelajahi",
     "contactTitle": "Kontak",
     "copyright": "© {year} Collaclips. Semua hak dilindungi.",

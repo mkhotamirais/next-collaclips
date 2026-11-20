@@ -210,4 +210,7 @@ button {
   .btn {
     @apply border;
   }
+  .highlight-hero {
+    @apply bg-linear-to-r from-brand to-brand-2 bg-clip-text font-serif text-[1.1em] font-normal italic text-transparent;
+  }
 }

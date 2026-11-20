@@ -11,10 +11,11 @@ export default function HomePage() {
   return (
     <main>
       <Hero /> {/* #home */}
-      <Clients />
+      {/* <Clients /> */}
       <Statement />
       <Story />
-      <Clippers /> {/* #clippers */}
+      <Clippers />
+      {/* #clippers */}
       <Creators /> {/* #creators */}
       <FAQ />
       <Contact /> {/* #contact */}

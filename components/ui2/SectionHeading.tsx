@@ -1,10 +1,12 @@
 import { cn } from "cn";
 
 import Reveal from "./Reveal";
+import { ReactNode } from "react";
 
 type SectionHeadingProps = {
   eyebrow?: string;
-  title: string;
+  // title: string | ((chunks: ReactNode) => ReactNode),
+  title: ReactNode;
   /** potongan judul bergaya serif miring, tampil setelah `title` */
   highlight?: string;
   description?: string;
@@ -32,7 +34,7 @@ export default function SectionHeading({
         <h2 className="mt-4 font-display text-3xl font-medium leading-tight tracking-tight text-fg sm:text-4xl lg:text-5xl">
           {title}{" "}
           {highlight && (
-            <span className="bg-gradient-to-r from-brand to-brand-2 bg-clip-text pr-[0.08em] font-serif font-normal italic text-transparent">
+            <span className="bg-linear-to-r from-brand to-brand-2 bg-clip-text pr-[0.08em] font-serif font-normal italic text-transparent">
               {highlight}
             </span>
           )}
