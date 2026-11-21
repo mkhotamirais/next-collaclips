@@ -47,9 +47,12 @@ export default function ContactForm() {
   async function onSubmit(values: ContactValues) {
     setStatus("idle");
     try {
-      await sendEmail(values);
-      form.reset();
-      setStatus("success");
+      const res = await sendEmail(values);
+
+      if (res.ok) {
+        form.reset();
+        setStatus("success");
+      }
     } catch {
       setStatus("error");
     }
