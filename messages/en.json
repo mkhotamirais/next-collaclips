@@ -64,7 +64,7 @@
       }
     ],
     "closing": "One small moment, a big reach. That's what we help make happen",
-    "cta": "Start your story",
+    "cta": "Create a campaign",
     "clipTitle": "Funny podcast moment"
   },
   "clippers": {
@@ -224,7 +224,38 @@
       }
     ],
     "copyLabel": "Copy",
-    "copiedLabel": "Copied"
+    "copiedLabel": "Copied",
+    "direct": {
+      "title": "Or reach us directly",
+      "description": "Prefer to chat? Send us a message through one of these channels."
+    },
+    "form": {
+      "name": { "label": "Name", "placeholder": "Your full name" },
+      "email": { "label": "Email", "placeholder": "you@email.com" },
+      "role": {
+        "label": "I am a",
+        "options": { "creator": "Creator", "clipper": "Clipper", "brand": "Brand" }
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us what you need or your collaboration idea…"
+      },
+      "submit": "Send message",
+      "sending": "Sending…",
+      "errors": {
+        "nameMin": "Name must be at least 2 characters.",
+        "emailInvalid": "Enter a valid email address.",
+        "roleRequired": "Please choose a role.",
+        "messageMin": "Message must be at least 10 characters.",
+        "messageMax": "Message must be at most 1000 characters."
+      },
+      "success": {
+        "title": "Message sent",
+        "description": "Thank you! We'll reply by email as soon as we can.",
+        "again": "Send another message"
+      },
+      "failure": "Your message couldn't be sent. Please try again, or reach us on WhatsApp."
+    }
   },
   "footer": {
     "tagline": "A platform that connects brands with creators and clippers to run campaigns together.",

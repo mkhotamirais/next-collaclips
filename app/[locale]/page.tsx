@@ -1,4 +1,4 @@
-import Clients from "@/components/home/Clients";
+// import Clients from "@/components/home/Clients";
 import Clippers from "@/components/home/Clippers";
 import Contact from "@/components/home/Contact";
 import Creators from "@/components/home/Creators";

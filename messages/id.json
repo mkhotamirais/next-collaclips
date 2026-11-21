@@ -65,7 +65,7 @@
       }
     ],
     "closing": "Satu momen kecil, jangkauan yang besar. Itu yang kami bantu wujudkan",
-    "cta": "Mulai ceritamu",
+    "cta": "Buat campaign",
     "clipTitle": "Momen kocak di podcast"
   },
   "clippers": {
@@ -225,7 +225,34 @@
       }
     ],
     "copyLabel": "Salin",
-    "copiedLabel": "Tersalin"
+    "copiedLabel": "Tersalin",
+    "direct": {
+      "title": "Atau hubungi langsung",
+      "description": "Lebih nyaman ngobrol? Kirim pesan lewat salah satu kanal ini."
+    },
+    "form": {
+      "name": { "label": "Nama", "placeholder": "Nama lengkapmu" },
+      "email": { "label": "Email", "placeholder": "kamu@email.com" },
+      "message": {
+        "label": "Pesan",
+        "placeholder": "Ceritakan kebutuhan atau ide kolaborasimu…"
+      },
+      "submit": "Kirim pesan",
+      "sending": "Mengirim…",
+      "errors": {
+        "nameMin": "Nama minimal 2 karakter.",
+        "emailInvalid": "Masukkan alamat email yang valid.",
+        "roleRequired": "Pilih salah satu peran.",
+        "messageMin": "Pesan minimal 10 karakter.",
+        "messageMax": "Pesan maksimal 1000 karakter."
+      },
+      "success": {
+        "title": "Pesan terkirim",
+        "description": "Terima kasih! Kami akan membalas lewat email secepatnya.",
+        "again": "Kirim pesan lain"
+      },
+      "failure": "Pesan belum terkirim. Coba lagi, atau hubungi lewat WhatsApp."
+    }
   },
   "footer": {
     "tagline": "Platform yang mempertemukan brand dengan creator dan clipper untuk menjalankan campaign bersama-sama.",

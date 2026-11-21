@@ -1,31 +1,29 @@
 "use client";
 
-import { AtSign, Mail, MessageCircle, type LucideIcon } from "lucide-react";
+import { ArrowUpRight, AtSign, MessageCircle, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { motion, useReducedMotion } from "motion/react";
 
-import CopyButton from "@/components/ui2/CopyButton";
+import ContactForm from "@/components/ui2/ContactForm";
 import Reveal from "@/components/ui2/Reveal";
 import SectionHeading from "@/components/ui2/SectionHeading";
 import SmokeSection from "@/components/ui2/SmokeSection";
-import { cn } from "cn";
 
 type Channel = { id: string; label: string; value: string; href: string };
 
 const ICONS: Record<string, LucideIcon> = {
-  email: Mail,
   whatsapp: MessageCircle,
   instagram: AtSign,
 };
 
 export default function Contact() {
   const t = useTranslations("contact");
-  const reduce = useReducedMotion();
-  const channels = t.raw("channels") as Channel[];
+
+  // email dikirim lewat form; di sini hanya jalur langsung (WhatsApp dan Instagram)
+  const channels = (t.raw("channels") as Channel[]).filter((c) => c.id !== "email");
 
   return (
     <SmokeSection id="contact" className="bg-bg py-28 text-fg sm:py-36">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="container-fluid">
         <SectionHeading
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -33,50 +31,45 @@ export default function Contact() {
           description={t("description")}
         />
 
-        <ul className="mx-auto mt-14 grid max-w-3xl gap-4 sm:grid-cols-3">
-          {channels.map((c, i) => {
-            const Icon = ICONS[c.id] ?? Mail;
-            const external = !c.href.startsWith("mailto:");
+        <div className="mx-auto mt-14 grid max-w-5xl gap-10 md:grid-cols-[1.5fr_1fr] lg:gap-12 px-6">
+          <Reveal delay={0.1}>
+            <div className="rounded-3xl border border-line bg-surface/40 p-6 backdrop-blur-xl sm:p-8">
+              <ContactForm />
+            </div>
+          </Reveal>
 
-            return (
-              <li key={c.id}>
-                <Reveal delay={0.15 + i * 0.1} className="h-full">
-                  <motion.div
-                    whileHover={reduce ? undefined : { y: -3 }}
-                    className="relative flex h-full flex-col items-center gap-3 rounded-2xl border border-line bg-bg/50 p-6 text-center backdrop-blur-md transition-colors hover:border-white/20"
-                  >
-                    <span className="grid h-11 w-11 place-items-center rounded-full border border-brand/40 text-brand">
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">{c.label}</span>
+          <Reveal delay={0.2}>
+            <h3 className="font-display text-xl font-medium">{t("direct.title")}</h3>
+            <p className="mt-2 text-muted">{t("direct.description")}</p>
 
-                    {/* seluruh kartu bisa diklik lewat link ini (stretched link) */}
-                    {/* <div className={cn("inline-flex items-center gap-2", c.label === "Email" ? "mt-0" : "mt-1.5")}> */}
+            <ul className="mt-6 space-y-3">
+              {channels.map((c) => {
+                const Icon = ICONS[c.id] ?? MessageCircle;
+                return (
+                  <li key={c.id}>
                     <a
                       href={c.href}
-                      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                      className="break-all text-sm font-medium outline-none after:absolute after:inset-0 after:rounded-2xl focus-visible:after:ring-2 focus-visible:after:ring-brand"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-4 rounded-2xl border border-line bg-bg/50 p-5 backdrop-blur-md outline-none transition-colors hover:border-white/20 focus-visible:ring-2 focus-visible:ring-brand"
                     >
-                      {c.value}
+                      <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-brand/40 text-brand">
+                        <Icon className="h-5 w-5" />
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+                          {c.label}
+                        </span>
+                        <span className="mt-0.5 block truncate text-sm font-medium">{c.value}</span>
+                      </span>
+                      <ArrowUpRight className="h-5 w-5 shrink-0 text-muted transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-fg" />
                     </a>
-
-                    {/* tombol salin hanya untuk email; z-10 agar di atas link */}
-                    {/* {c.id === "email" && (
-                        <CopyButton
-                          iconOnly
-                          value={c.value}
-                          label={t("copyLabel")}
-                          copiedLabel={t("copiedLabel")}
-                          className="relative z-10 mt-1"
-                        />
-                      )}
-                    </div> */}
-                  </motion.div>
-                </Reveal>
-              </li>
-            );
-          })}
-        </ul>
+                  </li>
+                );
+              })}
+            </ul>
+          </Reveal>
+        </div>
       </div>
     </SmokeSection>
   );
