@@ -16,14 +16,16 @@ export async function sendEmail(values: ContactValues) {
 
   if (!values.name || !values.email || !values.message) return { ok: false, message: "Semua field harus diisi." };
 
-  const name = values.name.replace(/[\r\n]+/g, " ");
+  // const name = values.name.replace(/[\r\n]+/g, " ");
   try {
     const { error } = await resend.emails.send({
       from: email.from,
       to: email.to,
-      replyTo: values.email,
-      subject: `New message from ${name} via collaclips.com`,
-      text: `Name: ${name}\nEmail: ${values.email}\nMessage:\n${values.message}`,
+      replyTo: [`${values.email}`],
+      // subject: `New message from ${name} via collaclips.com`,
+      // text: `Name: ${name}\nEmail: ${values.email}\nMessage:\n${values.message}`,
+      subject: `New message`,
+      text: `Message: ${values.message}`,
     });
 
     if (error) {
