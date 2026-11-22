@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, AtSign, MessageCircle, type LucideIcon } from "lucide-react";
+// import { ArrowUpRight, AtSign, MessageCircle, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import ContactForm from "@/components/ui2/ContactForm";
@@ -8,22 +8,22 @@ import Reveal from "@/components/ui2/Reveal";
 import SectionHeading from "@/components/ui2/SectionHeading";
 import SmokeSection from "@/components/ui2/SmokeSection";
 
-type Channel = { id: string; label: string; value: string; href: string };
+// type Channel = { id: string; label: string; value: string; href: string };
 
-const ICONS: Record<string, LucideIcon> = {
-  whatsapp: MessageCircle,
-  instagram: AtSign,
-};
+// const ICONS: Record<string, LucideIcon> = {
+//   whatsapp: MessageCircle,
+//   instagram: AtSign,
+// };
 
 export default function Contact() {
   const t = useTranslations("contact");
 
   // email dikirim lewat form; di sini hanya jalur langsung (WhatsApp dan Instagram)
-  const channels = (t.raw("channels") as Channel[]).filter((c) => c.id !== "email");
+  // const channels = (t.raw("channels") as Channel[]).filter((c) => c.id !== "email");
 
   return (
     <SmokeSection id="contact" className="bg-bg py-28 text-fg sm:py-36">
-      <div className="container-fluid">
+      <div className="container">
         <SectionHeading
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -31,14 +31,15 @@ export default function Contact() {
           description={t("description")}
         />
 
-        <div className="mx-auto mt-14 grid max-w-5xl gap-10 md:grid-cols-[1.5fr_1fr] lg:gap-12 px-6">
+        {/* <div className="mx-auto mt-14 grid max-w-5xl gap-10 md:grid-cols-[1.5fr_1fr] lg:gap-12 px-6"> */}
+        <div className="mx-auto mt-14 max-w-3xl px-6">
           <Reveal delay={0.1}>
             <div className="rounded-3xl border border-line bg-surface/40 p-6 backdrop-blur-xl sm:p-8">
               <ContactForm />
             </div>
           </Reveal>
 
-          <Reveal delay={0.2}>
+          {/* <Reveal delay={0.2}>
             <h3 className="font-display text-xl font-medium">{t("direct.title")}</h3>
             <p className="mt-2 text-muted">{t("direct.description")}</p>
 
@@ -68,7 +69,7 @@ export default function Contact() {
                 );
               })}
             </ul>
-          </Reveal>
+          </Reveal> */}
         </div>
       </div>
     </SmokeSection>

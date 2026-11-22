@@ -232,7 +232,7 @@
     },
     "form": {
       "name": { "label": "Nama", "placeholder": "Nama lengkapmu" },
-      "email": { "label": "Email", "placeholder": "kamu@email.com" },
+      "email": { "label": "Email", "placeholder": "nama@email.com" },
       "message": {
         "label": "Pesan",
         "placeholder": "Ceritakan kebutuhan atau ide kolaborasimu…"

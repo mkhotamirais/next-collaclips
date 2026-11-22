@@ -231,7 +231,7 @@
     },
     "form": {
       "name": { "label": "Name", "placeholder": "Your full name" },
-      "email": { "label": "Email", "placeholder": "you@email.com" },
+      "email": { "label": "Email", "placeholder": "name@example.com" },
       "role": {
         "label": "I am a",
         "options": { "creator": "Creator", "clipper": "Clipper", "brand": "Brand" }
