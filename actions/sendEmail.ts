@@ -8,7 +8,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const isProd = process.env.NODE_ENV === "production";
 
 const email = isProd
-  ? { from: "Collaclips contact <website@collaclips.com>", to: "halo@collaclips.com" }
+  ? { from: "Collaclips contact <contact@collaclips.com>", to: "halo@collaclips.com" }
   : { from: "Acme <onboarding@resend.dev>", to: "delivered@resend.dev" };
 
 export async function sendEmail(values: ContactValues) {
@@ -20,12 +20,10 @@ export async function sendEmail(values: ContactValues) {
   try {
     const { error } = await resend.emails.send({
       from: email.from,
-      to: email.to,
-      replyTo: [`${values.email}`],
-      // subject: `New message from ${name} via collaclips.com`,
-      // text: `Name: ${name}\nEmail: ${values.email}\nMessage:\n${values.message}`,
-      subject: `New message`,
-      text: `Message: ${values.message}`,
+      to: [`${email.to}`],
+      replyTo: values.email,
+      subject: `New message from ${values.name} via collaclips.com`,
+      text: `Name: ${values.name}\nEmail: ${values.email}\nMessage:\n${values.message}`,
     });
 
     if (error) {
