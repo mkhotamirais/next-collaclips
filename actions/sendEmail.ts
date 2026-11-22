@@ -19,8 +19,8 @@ export async function sendEmail(values: ContactValues) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "Collaclips <contact@collaclips.com>",
-      to: ["contact@collaclips.com"],
+      from: "Collaclips <halo@collaclips.com>",
+      to: ["halo@collaclips.com"],
       replyTo: senderEmail,
       // replyTo: "halo@collaclps.com",
       subject: `Pesan kontak baru dari ${name}`,
