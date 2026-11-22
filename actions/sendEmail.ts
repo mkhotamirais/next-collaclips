@@ -2,37 +2,51 @@
 
 import { ContactValues } from "@/lib/types";
 import { Resend } from "resend";
-// import { getTranslations } from "next-intl/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const isProd = process.env.NODE_ENV === "production";
-
-const email = isProd
-  ? { from: "Collaclips contact <contact@collaclips.com>", to: "halo@collaclips.com" }
-  : { from: "Acme <onboarding@resend.dev>", to: "delivered@resend.dev" };
 
 export async function sendEmail(values: ContactValues) {
-  // const t = await getTranslations();
+  const name = values.name?.trim();
+  const senderEmail = values.email?.trim();
+  const message = values.message?.trim();
 
-  if (!values.name || !values.email || !values.message) return { ok: false, message: "Semua field harus diisi." };
+  if (!name || !senderEmail || !message) {
+    return {
+      ok: false,
+      message: "Semua field harus diisi.",
+    };
+  }
 
-  // const name = values.name.replace(/[\r\n]+/g, " ");
   try {
-    const { error } = await resend.emails.send({
-      from: email.from,
-      to: [`${email.to}`],
-      replyTo: values.email,
-      subject: `New message from ${values.name} via collaclips.com`,
-      text: `Name: ${values.name}\nEmail: ${values.email}\nMessage:\n${values.message}`,
+    const { data, error } = await resend.emails.send({
+      from: "Collaclips <halo@collaclips.com>",
+      to: ["halo@collaclips.com"],
+      replyTo: senderEmail,
+      subject: `Pesan kontak baru dari ${name}`,
+      text: [`Nama: ${name}`, `Email: ${senderEmail}`, "", "Pesan:", message].join("\n"),
     });
 
     if (error) {
-      console.error("Resend Error: ", error);
-      return { ok: false, message: "Gagal mengirim email" };
+      console.error("Resend error:", error);
+
+      return {
+        ok: false,
+        message: "Gagal mengirim email.",
+      };
     }
-    return { ok: true, message: "Berhasil" };
-  } catch (err) {
-    console.error("Server Error", err);
-    return { ok: false, error: "Terjadi kesalahan server" };
+
+    console.log("Resend email sent:", data?.id);
+
+    return {
+      ok: true,
+      message: "Berhasil",
+    };
+  } catch (error) {
+    console.error("Server error:", error);
+
+    return {
+      ok: false,
+      message: "Terjadi kesalahan server.",
+    };
   }
 }
