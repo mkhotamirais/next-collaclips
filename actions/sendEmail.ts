@@ -36,7 +36,7 @@ export async function sendEmail(values: ContactValues) {
       };
     }
 
-    console.log("Resend email sent:", data?.id);
+    console.log("Resend Email sent:", data?.id);
 
     return {
       ok: true,
