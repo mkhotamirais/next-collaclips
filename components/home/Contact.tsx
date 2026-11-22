@@ -32,9 +32,9 @@ export default function Contact() {
         />
 
         {/* <div className="mx-auto mt-14 grid max-w-5xl gap-10 md:grid-cols-[1.5fr_1fr] lg:gap-12 px-6"> */}
-        <div className="mx-auto mt-14 max-w-3xl px-6">
+        <div className="mx-auto mt-14 max-w-3xl sm:px-6">
           <Reveal delay={0.1}>
-            <div className="rounded-3xl border border-line bg-surface/40 p-6 backdrop-blur-xl sm:p-8">
+            <div className="rounded-xl sm:rounded-3xl border border-line bg-surface/40 p-4 sm:backdrop-blur-xl sm:p-8">
               <ContactForm />
             </div>
           </Reveal>
